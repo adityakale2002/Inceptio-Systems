@@ -1,0 +1,992 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Topic Listing Bootstrap 5 Template</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+
+
+
+</head>
+
+<body id="top">
+
+    <a href="https://www.linkedin.com/company/inceptio-systems/posts/?feedView=all" target="_blank"
+        class="linkedin-button">
+        <img src="/images/Linkedin-logo-on-transparent-PNG-.png" alt="LinkedIn" class="linkedin-icon">
+    </a>
+
+    <a href="https://api.whatsapp.com/send/?phone=971505523139&text&type=phone_number&app_absent=0"
+        class="whatsapp-icon" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+            class="whatsapp-icon-img">
+    </a>
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logo">
+                    <a class="logoup" href="index.html"><img src="images/logo.png" alt="#"></a>
+                </div>
+                <a class="navbar-brand" href="index.html">
+                    <span>Inceptio Systems</span>
+                </a>
+
+                <div class="d-lg-none ms-auto me-4">
+                    <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-auto me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about us.html" target="_blank">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Software Products</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="pms.html">INTIMUS PMS</a></li>
+                                <li><a class="dropdown-item" href="pos.html">INTIMUS POS</a></li>
+                                <li><a class="dropdown-item" href="app.html">INTIMUS APPS</a></li>
+                                <li><a class="dropdown-item" href="intimate.html">INTIMATE</a></li>
+                                <li><a class="dropdown-item" href="central.html">INTIMUS CENTRAL</a></li>
+                                <li><a class="dropdown-item" href="crs.html">INTIMUS CRS</a></li>
+                                <li><a class="dropdown-item" href="ibook.html">IBOOK</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarLightDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="topics-listing.html">Customized Software
+                                        Development</a></li>
+                                <li><a class="dropdown-item" href="topics-listing.html">Mobile and Web Application
+                                        Development</a></li>
+                                <li><a class="dropdown-item" href="topics-listing.html">Software Maintenance and
+                                        Upgradation</a></li>
+                                <li><a class="dropdown-item" href="topics-listing.html">Staffing Solution</a></li>
+                                <li><a class="dropdown-item" href="topics-listing.html">Digital Marketing</a></li>
+                                <li><a class="dropdown-item" href="contact.html">Blockchain & Data Analytics</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link " href="#section_5">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- JavaScript to remove active class on scroll -->
+        <script>
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+            // Remove active class from all links
+            function removeActiveClass() {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+            }
+
+            // Add scroll event listener to remove active class
+            window.addEventListener('scroll', function () {
+                removeActiveClass();
+            });
+        </script>
+
+
+        <script>
+            // Add event listener to button click
+            document.getElementById("scrollBtn").addEventListener("click", function (event) {
+                event.preventDefault();  // Prevent the default link behavior
+
+                // Get the target section
+                var targetSection = document.getElementById("section_2");
+
+                // Calculate the position with an appropriate offset
+                var offset = 200;  // Adjust this value to ensure enough space for the top section
+
+                // Use smooth scroll to target section with offset
+                window.scrollTo({
+                    top: targetSection.offsetTop - offset,  // This will place the section at the top with the offset
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+
+
+
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h1 class="text-white text-center text-nowrap"> <span class="headingone">
+                                Revolutionizing Hospitality
+                            </span> <br> with <br>
+                            Inceptio Systems</h1>
+                        <h6 class="text-center"></h6>
+
+
+                    </div>
+                </div>
+                <div class="row" style="margin-top: auto;">
+                    <div class="col-12 text-center">
+                        <a href="#section_2" class="btn custom-btn mb-4" id="scrollBtn">Explore our Products</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <br>
+
+
+        <section class="explore-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+
+
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="design-tab" data-bs-toggle="tab"
+                                data-bs-target="#software-tab-pane" type="button" role="tab"
+                                aria-controls="sofwtare-tab-pane" aria-selected="true">Software Products</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link " id="design-tab" data-bs-toggle="tab"
+                                data-bs-target="#design-tab-pane" type="button" role="tab"
+                                aria-controls="design-tab-pane" aria-selected="true">Development</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="marketing-tab" data-bs-toggle="tab"
+                                data-bs-target="#marketing-tab-pane" type="button" role="tab"
+                                aria-controls="marketing-tab-pane" aria-selected="false">Digital Marketing</button>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="finance-tab" data-bs-toggle="tab"
+                                data-bs-target="#finance-tab-pane" type="button" role="tab"
+                                aria-controls="finance-tab-pane" aria-selected="false">Recruitment</button>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12">
+                        <div class="tab-content" id="myTabContent">
+
+                            <div class="tab-pane fade show active" id="software-tab-pane" role="tabpanel"
+                                aria-labelledby="design-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="pms.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Intimus PMS</h5>
+
+                                                        <p class="mb-0">
+                                                        </p>Intimus PMS: The Ultimate Integrated Solution
+                                                        for Seamless Hospitality Management
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/PMS.webp" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="pos.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Intimus POS</h5>
+
+                                                        <p class="mb-0">
+                                                        </p>Intimus PMS: Empowering Hospitality Operations
+                                                        with Flexibility, Efficiency, and Data-Driven Insights
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/POS.webp" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="app.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Intimus Apps</h5>
+
+                                                        <p class="mb-0"></p>Intimus App: Streamlining Sales Operations
+                                                        with Real-Time Customer Insights and Performance Tracking
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/APP.webp" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Intimate</h5>
+
+                                                        <p class="mb-0">
+                                                        </p>Intimate: Revolutionizing the Guest Experience
+                                                        with a Seamless, Interactive Mobile Hotel Directory
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/INTIMATE.webp" class="custom-block-image img-fluid"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Intimus Central</h5>
+
+                                                        <p class="mb-0">
+                                                        </p>Intimus Central: The Comprehensive Solution for
+                                                        Seamless Hotel and Restaurant Chain Management
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/CENTRAL.webp" class="custom-block-image img-fluid"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Intimus CRS</h5>
+
+                                                        <p class="mb-0"></p>Intimus CRS: A Versatile, Multi-Property
+                                                        Online
+                                                        Booking Engine for Hotels and Guests
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/crs.webp" class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">IBOOK</h5>
+
+                                                        <p class="mb-0">
+                                                        </p>iBook: A Comprehensive Online Booking Engine for
+                                                        Leisure Activities, Events, and Sports.
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/IBOOK.webp" class="custom-block-image img-fluid"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="tab-pane fade show active" id="design-tab-pane" role="tabpanel"
+                                aria-labelledby="design-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Web Design</h5>
+
+                                                        <p class="mb-0">
+                                                            Crafting beautiful, responsive websites that deliver a
+                                                            seamless user experience. Let’s create a site that stands
+                                                            out!</p>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Software Maintanence and Upgradation</h5>
+
+                                                        <p class="mb-0">
+                                                            Keep your software running smoothly with regular maintenance
+                                                            and upgrades. We ensure optimal performance, security, and
+                                                            the latest features for your systems.</p>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/topics/undraw_Redesign_feedback_re_jvm0.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Mobile Application Development</h5>
+
+                                                        <p class="mb-0">Build powerful, user-friendly mobile apps that
+                                                            drive engagement and performance. Tailored solutions for
+                                                            both Android and
+                                                            iOS platforms.</p>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/topics/colleagues-working-cozy-office-medium-shot.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="marketing-tab-pane" role="tabpanel"
+                                aria-labelledby="marketing-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Advertising</h5>
+
+                                                        <p class="mb-0">Content about Advertising</p>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/topics/undraw_online_ad_re_ol62.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Content Creation</h5>
+
+                                                        <p class="mb-0">Content about Content Creation</p>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/topics/undraw_Group_video_re_btu7.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Social Media Marketing</h5>
+
+                                                        <p class="mb-0">Content about Social Media Marketing</p>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/topics/undraw_viral_tweet_gndb.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="finance-tab-pane" role="tabpanel"
+                                aria-labelledby="finance-tab" tabindex="0">
+                                <div class="row">
+
+                                    <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-0">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Staffing Solutions</h5>
+
+                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                    </div>
+
+
+                                                </div>
+
+                                                <img src="images/topics/undraw_Finance_re_gnv2.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="music-tab-pane" role="tabpanel" aria-labelledby="music-tab"
+                                tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Composing Song</h5>
+
+                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                    </div>
+
+                                                    <span class="badge bg-music rounded-pill ms-auto">45</span>
+                                                </div>
+
+                                                <img src="images/topics/undraw_Compose_music_re_wpiw.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Online Music</h5>
+
+                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                    </div>
+
+                                                    <span class="badge bg-music rounded-pill ms-auto">45</span>
+                                                </div>
+
+                                                <img src="images/topics/undraw_happy_music_g6wc.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Podcast</h5>
+
+                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                    </div>
+
+                                                    <span class="badge bg-music rounded-pill ms-auto">20</span>
+                                                </div>
+
+                                                <img src="images/topics/undraw_Podcast_audience_re_4i5q.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="education-tab-pane" role="tabpanel"
+                                aria-labelledby="education-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12 mb-4 mb-lg-3">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Graduation</h5>
+
+                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                    </div>
+
+                                                    <span class="badge bg-education rounded-pill ms-auto">80</span>
+                                                </div>
+
+                                                <img src="images/topics/undraw_Graduation_re_gthn.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="custom-block bg-white shadow-lg">
+                                            <a href="topics-detail.html">
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <h5 class="mb-2">Educator</h5>
+
+                                                        <p class="mb-0">Lorem Ipsum dolor sit amet consectetur</p>
+                                                    </div>
+
+                                                    <span class="badge bg-education rounded-pill ms-auto">75</span>
+                                                </div>
+
+                                                <img src="images/topics/undraw_Educator_re_ju47.png"
+                                                    class="custom-block-image img-fluid" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <section class="featured-section">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-4 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block bg-white shadow-lg">
+                            <a href="topics-detail.html">
+                                <div class="d-flex">
+                                    <div>
+                                        <h5 class="mb-2">Hospitality Softwares</h5>
+
+                                        <p class="mb-0">
+                                            We Specialize in Innovative
+                                            Hospitality Software. Our solutions streamline operations, enhance guest
+                                            experiences, and drive efficiency, empowering businesses to thrive in the
+                                            competitive hospitality landscape.</p>
+                                    </div>
+
+
+                                </div>
+
+                                <img src="images/topics/undraw_Remote_design_team_re_urdx.png"
+                                    class="custom-block-image img-fluid" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="custom-block custom-block-overlay">
+                            <div class="d-flex flex-column h-100">
+                                <img src="" class="custom-block-image img-fluid" alt="">
+
+                                <div class="custom-block-overlay-text d-flex">
+                                    <div>
+                                        <h5 class="text-white mb-2">INTIMUS PMS</h5>
+
+                                        <p class="text-white">
+                                            Intimus PMS has been designed as a one-stop solution for the hospitality
+                                            industry. Intimus PMS is a totally integrated
+                                            product offering wall-to-wall requirements of the hospitality industry. With
+                                            some innovative design and user-friendly
+                                            programs, Intimus makes operations easy and aids informed management
+                                            decision making with hard data analysis. Intimus’
+                                            highly parametrized set-up simplifies customization requirements and reduces
+                                            implementation cycle. Furthermore,
+                                            emulation of the hotels’ work-flow contributes to improved efficiency and
+                                            productivity.
+                                            Based on the feedback from our customers, we constantly strive to keep our
+                                            product technologically up-to-date and
+                                            feature-rich. This makes the system very flexible, technologically
+                                            up-to-date and extremely user-friendly.</p>
+
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="social-share d-flex">
+                                    <a href="pms.html" class="btn custom-btn mt-2 mt-lg-3">Learn More</a>
+
+
+                                </div>
+
+                                <div class="section-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+
+
+
+        <section class="timeline-section section-padding" id="section_3">
+            <div class="section-overlay"></div>
+
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <h2 class="text-white mb-4">How does it work?</h1>
+                    </div>
+
+                    <div class="col-lg-10 col-12 mx-auto">
+                        <div class="timeline-container">
+                            <ul class="vertical-scrollable-timeline" id="vertical-scrollable-timeline">
+                                <div class="list-progress">
+                                    <div class="inner"></div>
+                                </div>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Discover Tailored Solutions</h4>
+
+                                    <p class="text-white">Start by browsing our suite of software solutions designed to
+                                        elevate your business. Whether you're looking for a
+                                        property management system, a booking engine, or business intelligence tools,
+                                        our platform has everything you need.
+                                        Easily search for the solution that best fits your business needs.
+                                    </p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-search"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Implement & Customize for Your Business</h4>
+
+                                    <p class="text-white">Once you've identified the right solutions, our team works
+                                        with you to implement and customize the system to suit your
+                                        unique business requirements. We ensure that everything is set up to streamline
+                                        operations, enhance guest experiences,
+                                        and provide you with the tools you need to succeed.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-bookmark"></i>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <h4 class="text-white mb-3">Optimize & Grow with Data-Driven Insights</h4>
+
+                                    <p class="text-white">With your system in place, you can track performance, make
+                                        informed decisions, and grow your business. Our software
+                                        provides you with real-time analytics and actionable insights that help optimize
+                                        operations and improve profitability.
+                                        Stay ahead of the competition with continuous updates and support.</p>
+
+                                    <div class="icon-holder">
+                                        <i class="bi-book"></i>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center mt-5">
+                        <p class="text-white">
+                            Want More Information??
+                            <a href="#" class="btn custom-btn custom-border-btn ms-3">Contact Us Now</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section class="contact-section section-padding section-bg" id="section_5">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 text-center">
+                        <h2 class="mb-5">Get in touch</h2>
+                    </div>
+
+                    <div class="col-lg-5 col-12 mb-4 mb-lg-0">
+                        <iframe class="google-map"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.8753619235504!2d55.13973767437233!3d25.07221323675374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6cad13c2a5d7%3A0x2991ef0389e889a4!2sInceptio%20Systems%20DMCC!5e0!3m2!1sen!2sae!4v1732951855344!5m2!1sen!2sae"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+
+
+
+                    <div class="col-lg-3 col-md-6 col-12 mx-auto">
+                        <h4 class="mb-3">Dubai office</h4>
+
+                        <p>Inceptio Systems DMCC P O Box 634256, Unit 2405, HDS Tower, Cluster F, Jumeirah Lake Towers,
+                            Dubai, United Arab
+                            Emirates.</p>
+
+                        <hr>
+
+                        <p class="d-flex align-items-center mb-1">
+                            <span class="me-2">Phone</span>
+
+                            <a href="tel: +971 52 848 0137" class="site-footer-link">
+                                +971 52 848 0137
+                            </a>
+                        </p>
+
+                        <p class="d-flex align-items-center">
+                            <span class="me-2">Email</span>
+
+                            <a href="mailto:sales@inceptiosystems.com?subject=Inquiry&body=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                                class="site-footer-link">
+                                sales@inceptiosystems.com
+                            </a>
+                        </p>
+
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-3 mb-lg- mb-md-0 ms-auto">
+                        <h4 class="mb-3">Oman Office</h4>
+
+                        <p>Inceptio Systems LLC P O Box 912, Postal Code 117, Al Wadi Al Kabir, Muscat, Sultanate of
+                            Oman</p>
+
+                        <hr>
+
+                        <p class="d-flex align-items-center mb-1">
+                            <span class="me-2">Phone</span>
+
+                            <a href="tel: +968 9320 0635" class="site-footer-link">
+                                +968 9320 0635
+                            </a>
+                        </p>
+
+                        <p class="d-flex align-items-center">
+                            <span class="me-2">Email</span>
+
+                            <a href="mailto:sales@inceptiosystems.com?subject=Inquiry&body=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services."
+                                class="site-footer-link">
+                                sales@inceptiosystems.com
+                            </a>
+                        </p>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the contact link
+            const contactLink = document.querySelector('.nav-link[href="#section_5"]');
+
+            contactLink.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default anchor behavior
+
+                const target = document.querySelector(this.getAttribute('href'));
+
+                window.scrollTo({
+                    top: target.offsetTop,
+                    behavior: 'smooth' // This ensures smooth scrolling
+                });
+            });
+        });
+    </script>
+
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-12 mb-4 pb-2">
+                    <a class="navbar-brand mb-2" href="index.html">
+                        <i class="bi-back"></i>
+                        <span>Topic</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</h6>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">How it works</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">FAQs</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Information</h6>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 305-240-9671" class="site-footer-link">
+                            305-240-9671
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:info@company.com" class="site-footer-link">
+                            info@company.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            English</button>
+
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Thai</button></li>
+
+                            <li><button class="dropdown-item" type="button">Myanmar</button></li>
+
+                            <li><button class="dropdown-item" type="button">Arabic</button></li>
+                        </ul>
+                    </div>
+
+                    <p class="copyright-text mt-lg-5 mt-4 left-align">Inceptio gives your team all the tools necessary
+                        to maintain
+                        cutting edge guest services your guests expect and deserve.
+                    </p>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
